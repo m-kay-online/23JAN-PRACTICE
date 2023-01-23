@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std; 
+int main(){ try {
+     throw 10.1;
+} catch (int param) {
+      cout << "int exceptionn";}
+    catch (...) {
+        cout << "default exceptionn";
+        cout << "After Exception";
+       return 0;}
